@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+
+
+
+
+
+{%block body%}
+
+<div class="container">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/img/ddd.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/static/img/image-1600x400.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/static/img/image-1600x400 (1).jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="container my-4">
+
+  <div class="jumbotron">
+      <h1 class="display-4">Welcome To E-Learning Platform
+      </h1>
+      <p class="lead">This is a E-Learning Platform , Where You can learn The Various Courses Free  .</p>
+      <hr class="my-4">
+      <p>To get started, let’s establish an eLearning definition. So, what is eLearning? eLearning, or electronic learning, is the delivery of learning and training through digital resources. Although eLearning is based on formalized learning, it is provided through electronic devices such as computers, tablets and even cellular phones that are connected to the internet. This makes it easy for users to learn anytime, anywhere, with few, if any, restrictions. Basically, eLearning is training, learning, or education delivered online through a computer or any other digital device. Check out our eLearning Glossary which is jam packed full of eLearning terms..</p>
+      <p class="lead">
+          <a class="btn btn-primary btn-lg" href="courses" role="button">See Courses</a>
+      </p>
+  </div>
+
+</div>
+
+
+  {%endblock body%}

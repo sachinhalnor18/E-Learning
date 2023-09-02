@@ -1,0 +1,36 @@
+{% extends 'base.html' %} <!--  this will take all code from the base.html -->
+{% load embed_video_tags %}
+
+{%block title%} Search Result {% endblock title %}
+<!-- this wiil paste the text which is in this block & paste in the  section of base.html -->
+{%block blogactive%}active {%endblock blogactive%}
+{% block body %} <!--whatever we write in this block it will get paste in the block body of the base.html  -->
+
+<div class="container my-3">
+    <h2 center> Related to your search:</h2>
+    {% if allPost|length < 1 %} <p>
+        <h5> No Result Found </h5>
+        </p>
+        try with different Keyword
+        {% endif %}
+
+        {% for post in allPost %} <!--iteration is done -->
+
+        <p class="text-center"> <big style="font-size:40px; 
+                                          font-weight:bold; 
+                                        color:green; ">  {{post.title}}
+                                </big></p>
+
+
+
+        <div class="container d-flex justify-content-center my-5">
+            {% video post.video 'small' %}
+        </div>
+        <div class="container-fluid">
+            {{post.content}}
+        </div>
+        ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        {% endfor %}
+</div>
+
+{% endblock body %}
